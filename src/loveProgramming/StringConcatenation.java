@@ -4,14 +4,15 @@ public class StringConcatenation {
     public static void main(String[] args) {
         String text = "Hello";
         String anotherText = new String("Hello");
-        //+ operator is used in 2 ways; if both are numeric you will result in numeric
+        char a = 'A', b = 'B';
+        //+ operator is ucharsed in 2 ways; if both are numeric you will result in numeric
         // if any one is string you will result is string
 
         System.out.println(2+3);
         System.out.println("a"+"b");
         System.out.println(1+2+"d");
         System.out.println("c"+1+2+"d");
-        System.out.println("2"+"3");
+        System.out.println(a+b);
 
         int three = 3;
         String four = "4";
@@ -31,6 +32,9 @@ public class StringConcatenation {
         System.out.println(world);
         System.out.println(newString);
 
+        String info = "Java class Java class. Selenium Class Selenium Class.                                                           JAVASelenium Classs.";
+        info = info.replace(" ","");
+        System.out.println(info);
     }
 
 }
